@@ -26,9 +26,6 @@ class App extends Component {
                 <li className="navbar-item">
                   <Link to="/create" className="nav-link">Add Audiobook</Link>
                 </li>
-                <li className="navbar-item">
-                  <Link to="/edit/:id" className="nav-link">Edit Audiobook</Link>
-                </li>
               </ul>
           </nav>
 

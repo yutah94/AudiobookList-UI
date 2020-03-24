@@ -68,12 +68,17 @@ export class EditAudiobooks extends Component {
             genre: this.state.genre,
             completed: this.state.completed
         };
+
         console.log(obj);
-        axios.post(`${uriBase}/audiobooks/update/`+this.props.match.params.id, obj)
+        axios.put(`${uriBase}/audiobooks/${this.props.match.params.id}`, obj)
             .then(res => console.log(res.data))
             .catch(error => {
                 console.log(error.res)
+
+            
             });
+
+            
         
         this.props.history.push('/');
     }
