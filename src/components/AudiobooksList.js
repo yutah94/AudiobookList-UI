@@ -33,20 +33,6 @@ class AudiobooksList extends Component {
     }
 
     retrieveBooklist() {
-        this._isMounted = true;
-
-        axios.get(`${uriBase}/audiobooks/`)
-        .then(response => {
-            this.setState({audiobooks: response.data});
-        })
-        .catch(function(error) {
-            console.log(error);
-        })
-    }
-
-    componentDidUpdate() {
-        this._isMounted = false;
-
         axios.get(`${uriBase}/audiobooks/`)
         .then(response => {
             this.setState({audiobooks: response.data});
@@ -86,6 +72,16 @@ class AudiobooksList extends Component {
     componentDidMount(){
         this.retrieveBooklist();
     }
+
+        // componentDidUpdate() {
+    //     axios.get(`${uriBase}/audiobooks/`)
+    //     .then(response => {
+    //         this.setState({audiobooks: response.data});
+    //     })
+    //     .catch(function(error) {
+    //         console.log(error);
+    //     })
+    // }
 
     render() {
         return (
