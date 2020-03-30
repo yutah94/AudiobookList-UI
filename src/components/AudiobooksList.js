@@ -22,6 +22,7 @@ const Audiobooks = props => (
     </tr>
 )
 
+
 class AudiobooksList extends Component {
     constructor(props) {
         super(props);
@@ -32,6 +33,20 @@ class AudiobooksList extends Component {
     }
 
     retrieveBooklist() {
+        this._isMounted = true;
+
+        axios.get(`${uriBase}/audiobooks/`)
+        .then(response => {
+            this.setState({audiobooks: response.data});
+        })
+        .catch(function(error) {
+            console.log(error);
+        })
+    }
+
+    componentDidUpdate() {
+        this._isMounted = false;
+
         axios.get(`${uriBase}/audiobooks/`)
         .then(response => {
             this.setState({audiobooks: response.data});
@@ -50,11 +65,19 @@ class AudiobooksList extends Component {
     deleteAudiobook(id) {
         axios.delete(`${uriBase}/audiobooks/${id}`)
         .then(response => {
+            console.log("delete: ", response.data.deletedCount);
+            // if (response.data.deletedCount === 1) {
+            //     let tempArray = this.state.audiobooks
+            //     tempArray = tempArray.filter(audiobook => audiobook.id !== id);
+            //     console.log(tempArray);
+            //     this.setState({audiobooks: tempArray})
+            //     return tempArray;
+            // }
             this.setState(state => ({
-                todos: this.state.audiobooks.filter(audiobooks => audiobooks._id !== id)
+                audiobooks: this.state.audiobooks.filter(audiobooks => audiobooks._id !== id)
             }));
         })
-        .then(this.retrieveBooklist())
+        //.then(this.retrieveBooklist())
         .catch(function(error) {
             console.log(error);
         })
