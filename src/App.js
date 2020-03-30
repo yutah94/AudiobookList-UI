@@ -14,11 +14,12 @@ class App extends Component {
       <Router>
         <div className="App">
 
-          <nav className="navbar navbar-expand-lg navbar-light bg-light container">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-primary container">
             <a className="navbar-brand" href="https://github.com/yutah94">
               <img src={jazz} width="30" height="30" alt="Yuta's Github" />
             </a>
             <Link to="/" className="navbar-brand"><h1>Yuta's Audiobook List App</h1></Link>
+            
               <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
                   <Link to="/" className="nav-link">Audiobook List</Link>
