@@ -44,17 +44,17 @@ class AudiobooksList extends Component {
         })
     }
 
-    componentDidUpdate() {
-        this._isMounted = false;
+    // componentDidUpdate() {
+    //     this._isMounted = false;
 
-        axios.get(`${uriBase}/audiobooks/`)
-        .then(response => {
-            this.setState({audiobooks: response.data});
-        })
-        .catch(function(error) {
-            console.log(error);
-        })
-    }
+    //     axios.get(`${uriBase}/audiobooks/`)
+    //     .then(response => {
+    //         this.setState({audiobooks: response.data});
+    //     })
+    //     .catch(function(error) {
+    //         console.log(error);
+    //     })
+    // }
 
     audiobookList() {
         return this.state.audiobooks.map((currentAudiobook, i) => {
