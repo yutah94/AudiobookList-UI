@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbedd9ce.chunk.css",
-    "main.js": "/static/js/main.90751aac.chunk.js",
-    "main.js.map": "/static/js/main.90751aac.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7fb465a4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7fb465a4.js.map",
-    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.8a00d91f.chunk.js": "/static/js/2.8a00d91f.chunk.js",
-    "static/js/2.8a00d91f.chunk.js.map": "/static/js/2.8a00d91f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e0f443dd21bf0dc871c43867bddbeab5.js": "/precache-manifest.e0f443dd21bf0dc871c43867bddbeab5.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.cbedd9ce.chunk.css.map": "/static/css/main.cbedd9ce.chunk.css.map",
-    "static/js/2.8a00d91f.chunk.js.LICENSE.txt": "/static/js/2.8a00d91f.chunk.js.LICENSE.txt",
-    "static/media/jazz.png": "/static/media/jazz.a8ba4328.png"
+    "main.css": "/AudiobookList-UI/static/css/main.cbedd9ce.chunk.css",
+    "main.js": "/AudiobookList-UI/static/js/main.17a1d9de.chunk.js",
+    "main.js.map": "/AudiobookList-UI/static/js/main.17a1d9de.chunk.js.map",
+    "runtime-main.js": "/AudiobookList-UI/static/js/runtime-main.a79049ef.js",
+    "runtime-main.js.map": "/AudiobookList-UI/static/js/runtime-main.a79049ef.js.map",
+    "static/css/2.de424728.chunk.css": "/AudiobookList-UI/static/css/2.de424728.chunk.css",
+    "static/js/2.8a00d91f.chunk.js": "/AudiobookList-UI/static/js/2.8a00d91f.chunk.js",
+    "static/js/2.8a00d91f.chunk.js.map": "/AudiobookList-UI/static/js/2.8a00d91f.chunk.js.map",
+    "index.html": "/AudiobookList-UI/index.html",
+    "precache-manifest.d9d9a7a21410185be5cc908f344f8bd6.js": "/AudiobookList-UI/precache-manifest.d9d9a7a21410185be5cc908f344f8bd6.js",
+    "service-worker.js": "/AudiobookList-UI/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/AudiobookList-UI/static/css/2.de424728.chunk.css.map",
+    "static/css/main.cbedd9ce.chunk.css.map": "/AudiobookList-UI/static/css/main.cbedd9ce.chunk.css.map",
+    "static/js/2.8a00d91f.chunk.js.LICENSE.txt": "/AudiobookList-UI/static/js/2.8a00d91f.chunk.js.LICENSE.txt",
+    "static/media/jazz.png": "/AudiobookList-UI/static/media/jazz.a8ba4328.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7fb465a4.js",
+    "static/js/runtime-main.a79049ef.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.8a00d91f.chunk.js",
     "static/css/main.cbedd9ce.chunk.css",
-    "static/js/main.90751aac.chunk.js"
+    "static/js/main.17a1d9de.chunk.js"
   ]
 }
