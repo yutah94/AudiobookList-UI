@@ -71,13 +71,19 @@ export class EditAudiobooks extends Component {
 
         console.log(obj);
         axios.put(`${uriBase}/audiobooks/${this.props.match.params.id}`, obj)
+            .then(res => console.log(res.data))
             .then(res => {
-                console.log(res.data)
                 this.props.history.push('/');
             })
             .catch(error => {
-                console.log(error.res)            
+                console.log(error.res)
+
+            
             });
+
+            
+        
+        
     }
 
     render() {
