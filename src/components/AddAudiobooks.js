@@ -55,7 +55,10 @@ export class AddAudiobooks extends Component {
         }
 
         axios.post(`${uriBase}/audiobooks/add`, newAudiobook)
-        .then(res => console.log(res.data));
+        .then(res => console.log(res.data))
+        .then(res => {
+            this.props.history.push('/');
+        });
 
         this.setState({
             book_title: '',
